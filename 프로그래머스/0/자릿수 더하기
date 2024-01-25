@@ -1,0 +1,16 @@
+using System;
+
+public class Solution {
+    public int solution(int n) {
+        int answer = 0;
+        
+        string nString = n.ToString();
+        
+        foreach(char c in nString)
+        {
+            answer += Convert.ToInt32(c.ToString());
+        }
+        
+        return answer;
+    }
+}
