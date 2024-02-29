@@ -1,0 +1,16 @@
+using System;
+using System.Linq;
+
+public class Solution {
+    public string solution(string s) {
+        char[] ch = s.ToArray();
+        string answer = "";
+        
+        Array.Sort(ch);
+        Array.Reverse(ch);
+        
+        answer = new String(ch);
+        
+        return answer;
+    }
+}
